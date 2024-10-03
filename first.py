@@ -4,7 +4,7 @@ def hello():
 #hello()
 
 
-def sudy_lichy(cislo):
+def sudy_nebo_lichy(cislo):
     pass
 
 sudy_nebo_lichy(5)
