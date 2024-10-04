@@ -1,7 +1,7 @@
 def hello():
     print("Hello World!")
 
-#hello()
+hello()
 
 
 def sudy_nebo_lichy(cislo):
