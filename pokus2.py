@@ -20,7 +20,7 @@ def naformatuj_text(slovnik):
     prijmeni = slovnik["prijmeni"]
     vek = slovnik["vek"]
     znamky = slovnik["znamky"]
-    return f"Jméno: {jmeno}, Přijmení: {prijmeni}, Věk: {vek}, Průměrná známka: {znamky}"
+    return f"Jméno: {jmeno}, Přijmení: {prijmeni}, Věk: {vek}, Průměrná známka: {round(sum(znamky) / len(znamky), 2)}"
 
 
 if __name__ == "__main__":
@@ -34,6 +34,6 @@ if __name__ == "__main__":
     }
     print(naformatuj_text(student))
 
-    obalka = [9, 8, 7, 6, 5]
-    vysledek = udelej_prumer(obalka)
-    print(vysledek)
+    #obalka = [9, 8, 7, 6, 5]
+    #vysledek = udelej_prumer(obalka)
+    #print(vysledek)
