@@ -12,6 +12,9 @@ def vrat_treti(seznam):
 def udelej_prumer(seznam):
     return sum(seznam) / len(seznam)
 """""
+    #obalka = [9, 8, 7, 6, 5]
+    #vysledek = udelej_prumer(obalka)
+    #print(vysledek)
 
 # funkce naformatuje retezec, aby vratila text ve formatu:
 # "Jmeno: Jan, Prijmeni: Novak, Vek: 20, Prumerna znamka: 2.5"
@@ -34,6 +37,3 @@ if __name__ == "__main__":
     }
     print(naformatuj_text(student))
 
-    #obalka = [9, 8, 7, 6, 5]
-    #vysledek = udelej_prumer(obalka)
-    #print(vysledek)
