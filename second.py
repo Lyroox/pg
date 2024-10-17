@@ -26,7 +26,7 @@ def cislo_text(cislo):
             else:
                 desitky = (cislo // 10) * 10
                 jednotky = cislo % 10
-                return  f"Vaše zadané číslo je: {slovnik_desitky[desitky]} {slovnik_jednotky[jednotky]}"
+                return  "{slovnik_desitky[desitky]} {slovnik_jednotky[jednotky]}"
             
         # pokud číslo nesplňuje podmínky, vypíše upozornění
         else:
