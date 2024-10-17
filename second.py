@@ -15,18 +15,18 @@ def cislo_text(cislo):
         if cislo >= 0 and cislo <= 100:
 
             if cislo in slovnik_jednotky:
-                return  f"Vaše zadané číslo je: {slovnik_jednotky[cislo]}"
+                return  f"{slovnik_jednotky[cislo]}"
         
             elif cislo in slovnik_nact:
-                return  f"Vaše zadané číslo je: {slovnik_nact [cislo]}"
+                return  f"{slovnik_nact [cislo]}"
         
             elif cislo in slovnik_desitky:
-                return  f"Vaše zadané číslo je: {slovnik_desitky [cislo]}"
+                return  f"{slovnik_desitky [cislo]}"
         
             else:
                 desitky = (cislo // 10) * 10
                 jednotky = cislo % 10
-                return  "{slovnik_desitky[desitky]} {slovnik_jednotky[jednotky]}"
+                return  f"{slovnik_desitky[desitky]} {slovnik_jednotky[jednotky]}"
             
         # pokud číslo nesplňuje podmínky, vypíše upozornění
         else:
