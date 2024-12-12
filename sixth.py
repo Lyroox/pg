@@ -17,7 +17,7 @@ def download_url_and_get_all_hrefs(url):
 
     html_text = response.text
     for i in range(1, 6):
-        pattern = re.compile(f'<h{i}[^>]*>(.*?)</h{i}>', re.IGNORECASE)
+        pattern = re.compile(f'<a{i}[^>]*>(.*?)</a{i}>', re.IGNORECASE)
         matches = pattern.findall(html_text)
         hrefs.extend(matches)
 
