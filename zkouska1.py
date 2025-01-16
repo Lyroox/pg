@@ -7,7 +7,7 @@
 
 def find_divisible(max_number, divisor):
     # ZDE NAPIŠTE VÁŠ KÓD
-    pass
+    return [num for num in range(1, max_number + 1) if num % divisor == 0]
 
 
 # Unit testy
