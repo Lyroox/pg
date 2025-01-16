@@ -15,7 +15,16 @@ api_key = 'a023a3be26e530f37924110734b494b1'
 
 def fetch_weather_data(city):
     # ZDE NAPIŠTE VÁŠ KÓD
-    pass
+    url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}"
+    response = requests.get(url)
+    if response.ok:
+        data = response.json()
+        temp_kelvin = data["main"]["temp"]
+        temp_celsius = temp_kelvin - 273.15
+        return round(temp_celsius, 2)
+    else:
+        raise ValueError(f"Error fetching data for city {city}. Status code: {response.status_code}")
+
 
 
 # Unit testy
