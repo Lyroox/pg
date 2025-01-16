@@ -38,7 +38,7 @@ def test_fetch_weather_data():
     }
     with patch("requests.get") as mock_get:
         mock_get.return_value = MagicMock(ok=True, status_code=200, json=MagicMock(return_value=mock_response))
-        assert fetch_weather_data("Prague", "test_api_key") == 20.0  # 293.15 K = 20.0 °C
+        assert fetch_weather_data("Prague") == 20.0  # 293.15 K = 20.0 °C
 
 
 if __name__ == "__main__":
